@@ -1,0 +1,104 @@
+#standingsDiv{
+    background-image: url('https://sportstime247.com/wp-content/uploads/2023/09/India-vs-australia-2023-schedule.jpg');
+    background-size: auto; 
+    width:1506px;
+    height:729px;
+    display:flex;
+    box-sizing:border-box;
+    padding:15px;
+    align-items:flex-start;
+    justify-content:flex-end;
+    user-select:none;
+  }
+  
+  #standings{
+    display:flex;
+    flex-direction:column;
+    background-color:#1f1f1f;
+    width:350px;
+    border-radius:10px;
+    border: 7px solid #b8b6b0;
+    margin-top:15px;
+  }
+  #topbar{
+    display:flex;
+  }
+  #heading h3{
+    color:white;
+    font-weight:300;
+    font-size:16px;
+    padding:12px 8px 8px 8px;
+  }
+  
+  #scrollbar ul li{
+    color:#516370;
+    font-size:14px;
+    font-weight:700;
+    margin-right:10px;
+    white-space:nowrap;
+    padding:5px 5px 2px 5px;
+    color:white;
+  }
+  
+  #scrollbar ul li:hover{
+    cursor:pointer;
+  }
+
+  #scrollbar{
+    overflow-x:auto;
+    margin:10px;
+  }
+  #scrollbar::-webkit-scrollbar {
+    height:5px;
+  }
+  #scrollbar::-webkit-scrollbar-track {
+    background: #d1cec5; 
+  }
+  #scrollbar::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius:15px;
+  }
+  #scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  #scrollbar ul{
+    display:flex;
+    list-style:none;
+  }
+  
+  #table{
+    display:grid;
+    width:350px;
+    height:240px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  section div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:70px;
+    height:48px;
+    color:white;
+    font-size:14px;
+  }
+  .heading{
+    background-color:#ff0088;
+    font-weight:700;
+    color:white;
+    font-size:16px;
+  }
+  .logo img{
+    width:34px;
+    height:20px;
+    margin-right:5px;
+  }
+  
+  .logo{
+    font-size:15px;
+    font-weight:700;
+    color:white;
+  }
+  

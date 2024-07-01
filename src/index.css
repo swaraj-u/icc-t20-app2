@@ -13,63 +13,14 @@ body{
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  overflow-y:auto;
+  overflow-x:auto;
 }
 
-#videoSection{
-  background-color:black;
-  border-radius:15px;
-  width:100%;
-  box-sizing:border-box;
-  padding:10px;
+body::-webkit-scrollbar {
+  width:0.5px;
 }
 
-#videoSection h1{
-  color:white;
-  font-size:38px;
-  margin-bottom:40px;
-}
 
-#video-navbar{
-  display:flex;
-  flex-direction:row;
-  font-size:12px;
-  width:100%;
-  justify-content:flex-start;
-  color:white;
-  border-bottom:1px solid #1f1f1f; 
-  height:20px;
-  align-items:center;
-  margin-bottom:20px;
-}
 
-#video-navbar div{
-  margin-right:10px;
-  font-weight:700;
-  padding:5px;
-  margin-bottom:5px;
-}
-
-#container{
-  width:100%;
-  display:flex;
-  overflow-x:hidden;
-}
-
-#container div{
-  flex-shrink:0;
-  width:402px;
-  height:541px;
-  border-radius:15px;
-  padding:10px 10px 30px 10px;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-  align-items:center;
-  color:white;
-  box-sizing:border-box;
-  margin-right:10px;
-  font-weight:800;
-  font-size:16px;
-  box-shadow: 0 -100px 20px rgba(0, 0, 0, 0.5) inset;
-}
 

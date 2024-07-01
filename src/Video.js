@@ -1,7 +1,8 @@
 import VideoNavbar from "./VideoNavbar";
 import Videotab from "./Videotab";
+import './video.css';
 
-const Video = () => {
+const Video = ({ brightLow, setBrightLow }) => {
 
     const imageArray = [
         "https://images.icc-cricket.com/image/upload/t_ratio3_4-size20/prd/z2ipyef1xg15fuk7cxel",
@@ -30,7 +31,9 @@ const Video = () => {
     ];
 
     return (
-        <div id="videoSection">
+        <div id="videoSection" style={{
+            filter:( brightLow) ? "brightness(50%)" : "brightness(100%)",
+           }}>
             <h1>VIDEOS</h1>
             <VideoNavbar/>
             <Videotab headlines={headlines} imageArray={imageArray}/>
