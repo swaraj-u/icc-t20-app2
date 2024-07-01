@@ -13,6 +13,7 @@ function App() {
     <Router>
     <div className="App">
       <Routes>
+      <Route path="/" element={<Home brightLow={brightLow} setBrightLow={setBrightLow} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
         <Route path="/home" element={<Home brightLow={brightLow} setBrightLow={setBrightLow} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
         <Route path="/login" element={<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
         <Route path="/signin" element={<Signin />} />
