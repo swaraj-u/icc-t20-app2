@@ -79,7 +79,9 @@ useEffect(()  => {
 });
 
     return ( 
-      <main>
+      <main style={{
+        filter:( brightLow) ? "brightness(50%)" : "brightness(100%)",
+       }}>
         <h2>MATCH HIGHLIGHTS</h2>
         { textSearch && <div className="clearOption" onClick={clearFunction} style={{color:"white"}}>CLEAR</div>}
         { dateSearch && <div className="clearOption" onClick={clearFunction}  style={{color:"white"}}>CLEAR</div>}
