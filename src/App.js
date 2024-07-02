@@ -11,7 +11,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn]  = useState(false);
 
   return (
-    <Router>
+    <Router basename="/icc-t20-app2">
     <div className="App">
       <Routes>
       <Route path="/" element={<Home brightLow={brightLow} setBrightLow={setBrightLow} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
