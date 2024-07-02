@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './highlight.css';
 import { useEffect } from 'react';
-const Highlights = ({titles, eventImages, eventNames, dates}) => {
+const Highlights = ({titles, eventImages, eventNames, dates, brightLow, setBrightLow}) => {
 
   const tabContainer2 = document.querySelector("#highcontainer");
   
