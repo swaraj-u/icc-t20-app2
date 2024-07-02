@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './highlight.css';
 import { useEffect } from 'react';
-const Highlights = ({titles, eventImages, eventNames, dates}) => {
+const Highlights = ({titles, eventImages, eventNames, dates, brightLow, setBrightLow }) => {
 
   const tabContainer2 = document.querySelector("#highcontainer");
   
@@ -79,7 +79,9 @@ useEffect(()  => {
 });
 
     return ( 
-      <main>
+      <main style={{
+        filter:( brightLow) ? "brightness(50%)" : "brightness(100%)",
+       }}>
         <h2>MATCH HIGHLIGHTS</h2>
         { textSearch && <div className="clearOption" onClick={clearFunction} style={{color:"white"}}>CLEAR</div>}
         { dateSearch && <div className="clearOption" onClick={clearFunction}  style={{color:"white"}}>CLEAR</div>}
