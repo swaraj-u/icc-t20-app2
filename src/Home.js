@@ -37,7 +37,7 @@ const Home = ({brightLow, setBrightLow, isLoggedIn, setIsLoggedIn}) => {
     { !isLoggedIn && <Navbar brightLow={brightLow} setBrightLow={setBrightLow} />}
     { isLoggedIn && <LoggedIn brightLow={brightLow} setBrightLow={setBrightLow} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />}
     <StandingsDiv brightLow={brightLow} setBrightLow={setBrightLow} />
-    <Highlights titles={titles} eventImages={eventImages} eventNames={ eventNames2 } dates={dates2} />
+    <Highlights titles={titles} eventImages={eventImages} eventNames={ eventNames2 } dates={dates2} brightLow={brightLow} setBrightLow={setBrightLow}/>
     <Video brightLow={brightLow} setBrightLow={setBrightLow} />
     <Footer brightLow={brightLow} setBrightLow={setBrightLow} />
     </div>
