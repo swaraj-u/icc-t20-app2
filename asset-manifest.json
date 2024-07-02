@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/icc-t20-app2/static/css/main.0240104f.css",
+    "main.js": "/icc-t20-app2/static/js/main.060e94b5.js",
+    "index.html": "/icc-t20-app2/index.html",
+    "main.0240104f.css.map": "/icc-t20-app2/static/css/main.0240104f.css.map",
+    "main.060e94b5.js.map": "/icc-t20-app2/static/js/main.060e94b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0240104f.css",
+    "static/js/main.060e94b5.js"
+  ]
+}
