@@ -22,9 +22,9 @@ main{
     user-select: none;
   }
  
-  .swiper-button-next{
+  #next-scroll{
     position:absolute;
-    right:25px;
+    right:10px;
     width:100px;
     height:365px;
     display:flex;
@@ -34,7 +34,7 @@ main{
   }
   .swiper-button-previous{
     position:absolute;
-    left:25px;
+    left:10px;
     width:100px;
     height:365px;
     display:flex;

@@ -5,6 +5,8 @@ const Highlights = ({titles, eventImages, eventNames, dates,  brightLow, setBrig
 
   const tabContainer2 = document.querySelector("#highcontainer");
   
+  const previousScroll = document.querySelector("#previous-scroll");
+  
                                                                              
   const [counter2, setCounter2] = useState(false);
   const [userInput, setUserInput] = useState('');
@@ -24,6 +26,16 @@ const Highlights = ({titles, eventImages, eventNames, dates,  brightLow, setBrig
        
     tabContainer2.scrollLeft -= event.movementX;
     console.log(tabContainer2.scrollLeft);
+
+            if(tabContainer2.scrollLeft>0)
+            {
+                previousScroll.classList.add("swiper-button-previous");
+            }
+        
+            else if(tabContainer2.scrollLeft === 0)
+            {
+                previousScroll.classList.remove("swiper-button-previous");
+            }
 
 }
  
@@ -101,7 +113,7 @@ useEffect(()  => {
              onMouseMove={counter2 ? Dragging2 : Nothing2} 
              onMouseUp={stopDragging2}
       >
-       
+      <div id="previous-scroll"></div>
        {textSearch &&
        eventNameChanging.map((eventName) => {
         return (
@@ -137,7 +149,7 @@ useEffect(()  => {
           </div>
         )
        })}
-
+      <div id="next-scroll"></div>
       </div>
     </main> );
 }
