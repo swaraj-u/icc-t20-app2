@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './highlight.css';
-import { useEffect } from 'react';
+
 const Highlights = ({titles, eventImages, eventNames, dates,  brightLow, setBrightLow}) => {
 
   const tabContainer2 = document.querySelector("#highcontainer");
-  
+  const nextScroll = document.querySelector("#next-scroll");
   const previousScroll = document.querySelector("#previous-scroll");
   
                                                                              
@@ -23,19 +23,26 @@ const Highlights = ({titles, eventImages, eventNames, dates,  brightLow, setBrig
   }
 
   const Dragging2 = (event) => {
-       
+    const maxScrollLeft = tabContainer2.scrollWidth - tabContainer2.clientWidth - 10;
     tabContainer2.scrollLeft -= event.movementX;
     console.log(tabContainer2.scrollLeft);
+    console.log(maxScrollLeft);
 
-            if(tabContainer2.scrollLeft>0)
-            {
-                previousScroll.classList.add("swiper-button-previous");
-            }
-        
-            else if(tabContainer2.scrollLeft === 0)
-            {
-                previousScroll.classList.remove("swiper-button-previous");
-            }
+    if(tabContainer2.scrollLeft>0 && tabContainer2.scrollLeft < (maxScrollLeft) )
+      {
+          previousScroll.classList.add("swiper-button-previous");
+          nextScroll.classList.add("swiper-button-next");
+      }
+  
+      else if(tabContainer2.scrollLeft > (maxScrollLeft))
+      {
+          nextScroll.classList.remove("swiper-button-next");
+      }
+
+      else if(tabContainer2.scrollLeft === 0)
+      {
+          previousScroll.classList.remove("swiper-button-previous");
+      }
 
 }
  
@@ -82,13 +89,7 @@ const clearFunction = () => {
   setUserInput2('');
 }
 
-useEffect(()  => {
-  console.log(titles);
-  console.log(eventImages);
-  console.log(eventNames);
-  console.log(dates);
-  console.log(eventNameChanging);
-});
+
 
     return ( 
       <main style={{
@@ -108,6 +109,7 @@ useEffect(()  => {
               <button className="searchOption">Search</button>
             </form>
         </div>
+      <div id="highlightsWrapper">
       <div id="highcontainer"
              onMouseDown={startDragging2} 
              onMouseMove={counter2 ? Dragging2 : Nothing2} 
@@ -149,7 +151,8 @@ useEffect(()  => {
           </div>
         )
        })}
-      <div id="next-scroll"></div>
+      <div id="next-scroll" className="swiper-button-next"></div>
+      </div>
       </div>
     </main> );
 }

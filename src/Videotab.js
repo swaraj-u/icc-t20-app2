@@ -15,17 +15,20 @@ const Videotab = (props) => {
     }
 
     const Dragging = (event) => {
+
+        const maxScrollLeft = tabContainer.scrollWidth - tabContainer.clientWidth - 10;
        
         tabContainer.scrollLeft -= event.movementX;
         console.log(tabContainer.scrollLeft);
+        console.log(maxScrollLeft)
 
-            if(tabContainer.scrollLeft>0 && tabContainer.scrollLeft < 2633.60009765625)
+            if(tabContainer.scrollLeft>0 && tabContainer.scrollLeft < (maxScrollLeft) )
             {
                 previous.classList.add("scroll-previous");
                 next.classList.add("scroll-next");
             }
         
-            else if(tabContainer.scrollLeft === 2633.60009765625)
+            else if(tabContainer.scrollLeft > (maxScrollLeft))
             {
                 next.classList.remove("scroll-next");
             }
@@ -43,6 +46,7 @@ const Videotab = (props) => {
     const Nothing = () => {};
 
     return ( 
+        <div id="videoWrapper">
         <div id="container" 
              onMouseDown={startDragging} 
              onMouseMove={counter ? Dragging : Nothing} 
@@ -64,7 +68,7 @@ const Videotab = (props) => {
     }
     <span id="next" className="scroll-next"></span>
     </div>
-        
+    </div>  
      )
 }
  

@@ -14,17 +14,22 @@ main{
     color:white;
     font-size:38px;
   }
+  
+  #highlightsWrapper{
+    position:relative;
+  }
 
   #highcontainer{
+    
     display:flex;
     overflow-x:hidden;
     align-items:center;
     user-select: none;
   }
  
-  #next-scroll{
+  .swiper-button-next{
     position:absolute;
-    right:10px;
+    right:0px;
     width:100px;
     height:365px;
     display:flex;
@@ -34,7 +39,7 @@ main{
   }
   .swiper-button-previous{
     position:absolute;
-    left:10px;
+    left:0px;
     width:100px;
     height:365px;
     display:flex;

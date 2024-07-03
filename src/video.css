@@ -32,10 +32,17 @@
     margin-bottom:5px;
   }
   
+  #videoWrapper{
+    width:100%;
+    position:relative;
+  }
+
   #container{
+   
     width:100%;
     display:flex;
     overflow-x:hidden;
+    user-select:none;
   }
   
   #container div{
@@ -58,7 +65,7 @@
   
   .scroll-next{
     position:absolute;
-    right:10px;
+    right:0px;
     width:100px;
     height:541px;
     display:flex;
@@ -69,7 +76,7 @@
   
   .scroll-previous{
     position:absolute;
-    left:10px;
+    left:0px;
     width:100px;
     height:541px;
     display:flex;
