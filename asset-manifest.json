@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/icc-t20-app2/static/css/main.ff5e06c2.css",
-    "main.js": "/icc-t20-app2/static/js/main.203bcd87.js",
+    "main.css": "/icc-t20-app2/static/css/main.3f9306a4.css",
+    "main.js": "/icc-t20-app2/static/js/main.59a69717.js",
     "index.html": "/icc-t20-app2/index.html",
-    "main.ff5e06c2.css.map": "/icc-t20-app2/static/css/main.ff5e06c2.css.map",
-    "main.203bcd87.js.map": "/icc-t20-app2/static/js/main.203bcd87.js.map"
+    "main.3f9306a4.css.map": "/icc-t20-app2/static/css/main.3f9306a4.css.map",
+    "main.59a69717.js.map": "/icc-t20-app2/static/js/main.59a69717.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff5e06c2.css",
-    "static/js/main.203bcd87.js"
+    "static/css/main.3f9306a4.css",
+    "static/js/main.59a69717.js"
   ]
 }
