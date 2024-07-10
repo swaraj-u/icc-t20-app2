@@ -7,7 +7,7 @@ import LoggedIn from "./LoggedIn";
 import data from './data.json';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import PlayerInfo from "./PlayerInfo";
+
 
 
 const Home = ({brightLow, setBrightLow, isLoggedIn, setIsLoggedIn}) => {
@@ -40,7 +40,6 @@ const Home = ({brightLow, setBrightLow, isLoggedIn, setIsLoggedIn}) => {
     <StandingsDiv brightLow={brightLow} setBrightLow={setBrightLow} />
     <Highlights titles={titles} eventImages={eventImages} eventNames={ eventNames2 } dates={dates2} brightLow={brightLow} setBrightLow={setBrightLow} />
     <Video brightLow={brightLow} setBrightLow={setBrightLow} />
-    <PlayerInfo brightLow={brightLow} setBrightLow={setBrightLow} />
     <Footer brightLow={brightLow} setBrightLow={setBrightLow} />
     </div>
      );

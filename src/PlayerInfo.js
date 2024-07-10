@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import './playerInfo.css';
 import { useEffect, useState } from 'react';
 
-const PlayerInfo = ({ brightLow, setBrightLow }) => {
+const PlayerInfo = () => {
 
     const [playerName, setPlayerName] = useState('');
     const [logo, setLogo] = useState('');
@@ -34,9 +35,8 @@ const PlayerInfo = ({ brightLow, setBrightLow }) => {
     },[]);
 
     
-        return ( <div id="playerInfo" style={{
-            filter:( brightLow) ? "brightness(50%)" : "brightness(100%)",
-           }}>
+        return ( <div id="playerInfo" >
+            <Link to="/home"><div id="backOption">Back</div></Link>
             <nav>
                <p>{playerName}</p>
                <img alt="" src={logo}/>

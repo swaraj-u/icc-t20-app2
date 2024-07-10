@@ -4,6 +4,7 @@ import Signin from "./Signin";
 import Error from "./Error";
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import PlayerInfo from "./PlayerInfo";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/home" element={<Home brightLow={brightLow} setBrightLow={setBrightLow} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
         <Route path="/login" element={<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
         <Route path="/signin" element={<Signin />} />
+        <Route path="/playerProfile" element={<PlayerInfo />} />
         <Route path="*" element={< Error />} />
       </Routes>
     </div>

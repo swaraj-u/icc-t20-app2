@@ -79,6 +79,22 @@
     border-radius:10px;
   }
   
+  #profile{
+    font-weight:600;
+    font-size:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:10px;
+    padding:5px;
+    color:white;
+  }
+  #profile:hover{
+    cursor:pointer;
+    background-color: rgba(200, 201, 204,0.2);
+    border-radius:10px;
+  }
+
   #login{
     font-weight:600;
     font-size:12px;
